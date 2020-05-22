@@ -1,0 +1,15 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+#welcome {
+    text-align: center;
+}
+
+#welcprompt {
+    text-align: center;
+}
+
+#gradreq {
+    border: 3px solid green;
+}
