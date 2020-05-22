@@ -45,7 +45,7 @@ class GradReq extends React.Component {
                     <Category name='Arts & Literature' id='artlit' units={this.state.artlit} waive={this.waive} />
                     <Category name='Biological Science' id='biosci' units={this.state.biosci} waive={this.waive} />
                     <Category name='Historical Studies' id='histstud' units={this.state.histstud} waive={this.waive} />
-                    <Category name='International Studies' id='instud' units={this.state.intstud} waive={this.waive} />
+                    <Category name='International Studies' id='intstud' units={this.state.intstud} waive={this.waive} />
                     <Category name='Philosophy & Values' id='phil' units={this.state.phil} waive={this.waive} />
                     <Category name='Physical Science' id='phys' units={this.state.phys} waive={this.waive} />
                     <Category name='Social & Behavioral Science' id='social' units={this.state.social} waive={this.waive} />

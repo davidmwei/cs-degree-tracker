@@ -13,14 +13,14 @@ class Category extends React.Component {
 
         if (units === 0) {
             return (
-                <div onClick={() => this.props.waive(id)} style={{opacity: 0.25}}>
+                <strike class='category' onClick={() => this.props.waive(id)} style={{opacity: 0.25}}>
                     {name}: 0 
-                </div>
+                </strike>
             )
         }
 
         return (
-            <div onClick={() => this.props.waive(id)}>
+            <div class='category' onClick={() => this.props.waive(id)}>
                 {name}: {units} 
             </div>
         )
