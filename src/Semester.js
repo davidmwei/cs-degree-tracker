@@ -1,4 +1,5 @@
 import React from 'react';
+import Classes from './Classes';
 
 class Semester extends React.Component {
     constructor(props) {
@@ -8,7 +9,7 @@ class Semester extends React.Component {
     }
 
     makeSems(item) {
-        return <li>{item.text}</li>
+        return <li><Classes sem={item.text} /></li>
     }
 
     render() {
@@ -16,7 +17,7 @@ class Semester extends React.Component {
         var sems = semEntries.map(this.makeSems);
 
         return (
-            <ul>
+            <ul class='mySems'>
                 {sems}
             </ul>
         )

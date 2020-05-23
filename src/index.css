@@ -55,3 +55,18 @@ strike {
     padding: 10px;
     margin: 20px;
 }
+
+ul {
+    list-style: none;
+}
+
+ul.mySems {
+    padding: 0;
+}
+
+#semester {
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

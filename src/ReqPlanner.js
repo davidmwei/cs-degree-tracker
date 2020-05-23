@@ -69,7 +69,7 @@ class ReqPlanner extends React.Component {
                         </div>
                     </div>
                     <div id='majorreq'>
-                        <h2>Under Division</h2>
+                        <h2>Lower Division</h2>
                         <div id='underdiv'>
                             <Category name='Computer Science 61A' id='c61a' units={this.state.c61a} />
                             <Category name='Computer Science 61B' id='c61b' units={this.state.c61b} />

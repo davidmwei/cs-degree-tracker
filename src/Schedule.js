@@ -25,8 +25,6 @@ class Schedule extends React.Component {
             }
         })
         i.preventDefault();
-
-        console.log(this.state.sems);
     }
 
     render() {
