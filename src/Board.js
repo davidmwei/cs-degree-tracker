@@ -1,6 +1,5 @@
 import React from 'react';
-import GradReq from './GradReq';
-import MajorReq from './MajorReq';
+import ReqPlanner from './ReqPlanner';
 
 class Board extends React.Component {
     render() {
@@ -11,11 +10,10 @@ class Board extends React.Component {
                     <p id='welcprompt'>something something something something info info info info</p>
                 </div>
                 <div id='requirementsContainer'>
-                    <GradReq />
-                    <MajorReq />
+                    <ReqPlanner />
                 </div>
                 <div id='semesters'>
-                    
+                
                 </div>
             </div>
         );

@@ -11,7 +11,7 @@ body {
     text-align: center;
 }
 
-#requirementsContainer {
+#requirements {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,9 +30,16 @@ strike {
 }
 
 .category {
+    display: flex;
+    flex-direction: row;
     border-radius: 8px;
     padding: 2px;
 
+}
+
+#units {
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .category:hover {
@@ -40,4 +47,11 @@ strike {
     border: 2px solid green;
     border-radius: 8px;
     cursor: pointer;
+}
+
+#schedule {
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px;
 }
