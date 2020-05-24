@@ -1,5 +1,5 @@
 import React from 'react';
-import Semester from './Semester';
+import Semesters from './Semester';
 
 class Schedule extends React.Component {
     constructor(props) {
@@ -33,7 +33,7 @@ class Schedule extends React.Component {
                 <form onSubmit={this.addSem}>
                     <button type="addSem">Add Semester</button>
                 </form>
-                <Semester entries={this.state.sems} />
+                <Semesters entries={this.state.sems} />
             </div>
         )
     }

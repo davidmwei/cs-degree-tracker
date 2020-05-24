@@ -1,7 +1,7 @@
 import React from 'react';
 import Classes from './Classes';
 
-class Semester extends React.Component {
+class Semesters extends React.Component {
     constructor(props) {
         super(props);
 
@@ -24,4 +24,4 @@ class Semester extends React.Component {
     }
 }
 
-export default Semester;
+export default Semesters;
