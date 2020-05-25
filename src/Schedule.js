@@ -1,5 +1,5 @@
 import React from 'react';
-import Semesters from './Semester';
+import Semesters from './Semesters';
 
 class Schedule extends React.Component {
     constructor(props) {
@@ -18,12 +18,16 @@ class Schedule extends React.Component {
             key: this.state.cur
         };
 
-        this.setState((prevState) => {
-            return {
-                sems: prevState.sems.concat(newSem),
-                cur: this.state.cur + 1
-            }
-        })
+        if (newSem.key > 10) {
+            alert("You must graduate within 5 years at Cal.")
+        } else {
+            this.setState((prevState) => {
+                return {
+                    sems: prevState.sems.concat(newSem),
+                    cur: this.state.cur + 1
+                }
+            })
+        }
         i.preventDefault();
     }
 

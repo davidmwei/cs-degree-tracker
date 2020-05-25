@@ -1,5 +1,5 @@
 import React from 'react';
-import Classes from './Classes';
+import ClassesMain from './ClassesMain';
 
 class Semesters extends React.Component {
     constructor(props) {
@@ -9,7 +9,7 @@ class Semesters extends React.Component {
     }
 
     makeSems(item) {
-        return <li><Classes sem={item.text} /></li>
+        return <li><ClassesMain sem={item.text} /></li>
     }
 
     render() {
