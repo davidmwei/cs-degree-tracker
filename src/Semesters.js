@@ -17,7 +17,7 @@ class Semesters extends React.Component {
         var sems = semEntries.map(this.makeSems);
 
         return (
-            <ul class='mySems'>
+            <ul className='mySems'>
                 {sems}
             </ul>
         )

@@ -50,14 +50,14 @@ class ReqPlanner extends React.Component {
             <div id='reqBody'>
                 <div id='requirements'>
                         <div id='unireq'>
-                            <div class='reqTitles'>University Requirements</div>
+                            <div className='reqTitles'>University Requirements</div>
                             <Category name='Entry Level Writing' id='elwriting' units={this.state.elwriting} waivable={true} waive={this.waive} />
                             <Category name='American History' id='amhist' units={this.state.amhist} waivable={true} waive={this.waive} />
                             <Category name='American Institutions' id='aminst' units={this.state.aminst} waivable={true} waive={this.waive} />
                             <Category name='American Cultures' id='amcul' units={this.state.amcul} waivable={true} waive={this.waive} />
                         </div>
                         <div id='lsreq'>
-                            <div class='reqTitles'>L&S Requirements</div>
+                            <div className='reqTitles'>L&S Requirements</div>
                             <Category name='Reading & Composition (part 1)' id='r1a' units={this.state.r1a} waivable={true} waive={this.waive} />
                             <Category name='Reading & Composition (part 2)' id='r1b' units={this.state.r1b} waivable={true} waive={this.waive} />
                             <Category name='Quantitative Reasoning' id='quant' units={this.state.quant} waivable={true} waive={this.waive} />
@@ -71,7 +71,7 @@ class ReqPlanner extends React.Component {
                             <Category name='Social & Behavioral Science' id='social' />
                         </div>
                         <div id='lowerdiv'>
-                            <div class='reqTitles'>Lower Division</div>
+                            <div className='reqTitles'>Lower Division</div>
                             <Category name='Computer Science 61A' id='c61a' />
                             <Category name='Computer Science 61B' id='c61b' />
                             <Category name='Computer Science 61C' id='c61c' />
@@ -79,7 +79,7 @@ class ReqPlanner extends React.Component {
                             <Category name='EECS16B' id='e16b' />
                         </div>
                         <div id='upperdiv'>
-                            <div class='reqTitles'>Upper Division</div>
+                            <div className='reqTitles'>Upper Division</div>
                             <Category name='Design Course' id='design' units={this.state.design} />
                             <Category name='Computer Science / Electrical Engineering / EECS' id='otherce' units={this.state.otherce} />
                             <Category name='Technical Electives' id='elect' units={this.state.elect} />

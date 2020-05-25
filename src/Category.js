@@ -14,7 +14,7 @@ class Category extends React.Component {
         if (this.props.waivable) {
             if (units === 0) {
                 return (
-                    <strike class='waivable' onClick={() => this.waive(id)} style={{opacity: 0.25}}>
+                    <strike className='waivable' onClick={() => this.waive(id)} style={{opacity: 0.25}}>
                         <div id='name'>{name}</div>
                     </strike>
                 )
@@ -28,7 +28,7 @@ class Category extends React.Component {
 
         if (units === 0) {
             return (
-                <strike class='category' style={{opacity: 0.25}}>
+                <strike className='category' style={{opacity: 0.25}}>
                     <div id='name'>{name}</div>
                     <div id='units'>{units}</div>
                 </strike>

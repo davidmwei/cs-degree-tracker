@@ -1,4 +1,5 @@
 import React from 'react';
+import Autocomplete from './Autocomplete';
 
 class ClassesMain extends React.Component {
     constructor(props) {
@@ -7,7 +8,8 @@ class ClassesMain extends React.Component {
             error: null,
             isLoaded: false,
             courses: [],
-            names: []
+            names: [],
+            fullnames: []
         };
 
         this.populateNames = this.populateNames.bind(this);
@@ -21,8 +23,24 @@ class ClassesMain extends React.Component {
             this.setState({
               isLoaded: true,
               courses: result.courses,
-              names: result.courses.map(course => result.courses.abbreviation + " " + result.courses.course_number)
+              names: result.courses.map(course => course.abbreviation + " " + course.course_number)
             });
+
+            /*result.courses.forEach(course => {
+              let fetchId = "https://www.berkeleytime.com/api/catalog/catalog_json/course_box/?course_id=" + course.id;
+              console.log(fetchId);
+              fetch(fetchId)
+                .then(res => res.json())
+                .then(
+                  (result) => {
+                    var joined = this.state.fullnames.concat(result.title);
+                    this.setState({
+                      fullnames: joined 
+                    });
+                  }
+                )
+            })*/
+
           },
           // Note: it's important to handle errors here
           // instead of a catch() block so that we don't swallow
@@ -42,13 +60,12 @@ class ClassesMain extends React.Component {
 
     render() {
         var title = this.props.sem;
-        console.log(this.state.courses);
-        console.log(this.state.names);
+        console.log(this.state.fullnames);
 
         return (
             <div id='semester'>
                 <h3>{title}</h3>
-                Add classes here!
+                <Autocomplete options={this.state.names} />
             </div>
         )
     }
