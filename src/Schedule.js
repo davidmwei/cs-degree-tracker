@@ -35,7 +35,7 @@ class Schedule extends React.Component {
         return (
             <div id='schedulemain'>
                 <form onSubmit={this.addSem}>
-                    <button type="addSem">Add Semester</button>
+                    <button id='addSemButton' type="addSem">Add Semester</button>
                 </form>
                 <Semesters entries={this.state.sems} />
             </div>

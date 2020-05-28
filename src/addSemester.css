@@ -1,0 +1,10 @@
+#addSemButton {
+    width: 100%;
+    padding: 3%;
+    font-size: 1.17em;
+    font-weight: bold;
+    background-color: rgb(146, 189, 220);
+    border-radius: 8px;
+    border-color: black;
+    border-width: 1px;
+}

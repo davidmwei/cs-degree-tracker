@@ -11,19 +11,17 @@ class ClassesMain extends React.Component {
             names: [],
             fullnames: []
         };
-
-        this.populateNames = this.populateNames.bind(this);
     }
 
     componentDidMount() {
-      fetch("https://www.berkeleytime.com/api/catalog/catalog_json/")
+      fetch("https://www.berkeleytime.com/api/catalog/catalog_json/?form=long")
         .then(res => res.json())
         .then(
           (result) => {
             this.setState({
               isLoaded: true,
               courses: result.courses,
-              names: result.courses.map(course => course.abbreviation + " " + course.course_number)
+              names: result.courses.map(course => course.abbreviation + " " + course.course_number + ": " + course.title)
             });
 
             /*result.courses.forEach(course => {
@@ -54,17 +52,19 @@ class ClassesMain extends React.Component {
         )
     }
 
-    populateNames() {
-      
-    }
+
 
     render() {
         var title = this.props.sem;
         console.log(this.state.fullnames);
 
         return (
-            <div id='semester'>
-                <h3>{title}</h3>
+            <div className='semester'>
+                <h3 className='semesterTitle'>{title}</h3>
+                <div className='courseunits'>
+                    <div className='course'>Course</div>
+                    <div className='units'>Units</div> 
+                </div>
                 <Autocomplete options={this.state.names} />
             </div>
         )
