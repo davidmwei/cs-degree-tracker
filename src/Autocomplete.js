@@ -91,7 +91,7 @@ class Autocomplete extends React.Component {
                                     className = 'option-active';
                                 }
                                 return (
-                                    <li className={className} key={optionName} onClick={onClick}>
+                                    <li className='option-active' key={optionName} onClick={onClick}>
                                         {optionName}
                                     </li>
                                 );

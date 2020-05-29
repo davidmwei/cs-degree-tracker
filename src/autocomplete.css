@@ -1,7 +1,35 @@
 .search-box {
-    background-color: rgb(187, 187, 187);
     font-size: 1.05em;
     padding: 3px;
     margin-left: 10px;
     width: 75%;
+    border: 1px solid black;
 }
+
+.search-box:focus {
+    background-color: rgb(187, 187, 187);
+}
+
+.options, .no-options {
+    margin-top: 10px;
+    padding-left: 0px;
+    margin-left: 10px;
+}
+
+.options {
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.option-active {
+    padding: 5px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.option-active:hover {
+    cursor: pointer;
+    background-color: rgb(187, 187, 187, 0.5);
+}
+
